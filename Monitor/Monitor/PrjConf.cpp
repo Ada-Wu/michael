@@ -401,7 +401,7 @@ void CPrjConf::OnBnClickedBtnPrjLoad()
 		file.SeekToBegin();	//Sets the value of the file pointer to the beginning of the file
 		CArchive ar(&file, CArchive::load);//创建carchive，传递用于从文件读取或向文件写入数据的CArchive对象
 		pDoc->Serialize(ar);//序列化文件读取
-		//ar.Abort();
+		ar.Abort();
 		file.Close();
 	}
 

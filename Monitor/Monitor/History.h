@@ -1,5 +1,4 @@
 #pragma once
-#include "afxcmn.h"
 
 
 // CHistory ¶Ô»°¿ò
@@ -21,6 +20,4 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	virtual BOOL OnInitDialog();
-	void InitHistoryLst();
-	CListCtrl m_historyLst;
 };
