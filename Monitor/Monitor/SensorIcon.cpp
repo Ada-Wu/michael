@@ -13,8 +13,6 @@ CSensorIcon::CSensorIcon()
 {
 	m_sensorType = NO_ICON;
 	m_locationArea = CRect();
-	m_upperLevelName = "";
-	m_sensorId = "";
 	m_sensorDesc = "";
 }
 
@@ -31,16 +29,12 @@ void CSensorIcon::Serialize(CArchive& ar)
 	{
 		ar << m_sensorType;
 		ar << m_locationArea;
-		ar << m_upperLevelName;
-		ar << m_sensorId;
 		ar << m_sensorDesc;
 	}
 	else
 	{
 		ar >> m_sensorType;
 		ar >> m_locationArea;
-		ar >> m_upperLevelName;
-		ar >> m_sensorId;
 		ar >> m_sensorDesc;
 	}
 }
