@@ -15,7 +15,11 @@
 #define IDD_PRJCONF                     312
 #define IDD_TIME_CHECK                  313
 #define IDD_SOUND_CHOICE                314
+#define IDD_SOUND_CHANGE                314
 #define IDD_HISTORY                     315
+#define IDB_SENSORBMP                   316
+#define IDB_BITMAP1                     318
+#define IDB_GWBMP                       318
 #define IDC_STC_DATARV                  1000
 #define IDC_STC_DATASRVx                1001
 #define IDC_STC_DATARV2                 1002
@@ -66,17 +70,27 @@
 #define IDC_LISTCTRL_NGSTATE            1044
 #define IDC_STC_NGSTATE                 1045
 #define IDC_BTN_PROSV                   1046
+#define IDC_BTN_PRJAVE                  1046
+#define IDC_BTN_PRJSAVE                 1046
 #define ID_BTN_PROLD                    1047
+#define ID_BTN_PRJLOAD                  1047
 #define ID_BTN_OK                       1048
 #define IDC_STC_LCINFO                  1049
 #define IDC_BTN_LKNG                    1050
+#define IDC_BTN_GWDATA                  1050
 #define IDC_BTN_ADDNG                   1051
+#define IDC_BTN_ADDGW                   1051
 #define IDC_BTN_ADDDV                   1052
+#define IDC_BTN_ADDSENSOR               1052
 #define IDC_STC_ARNM                    1053
 #define IDC_COMBO_ARNM                  1054
+#define IDC_COMBO_AREA                  1054
 #define IDC_COMBO_NGNO                  1055
+#define IDC_COMBO_GWID                  1055
 #define IDC_STC_NGNO                    1056
+#define ID_BTN_PROLD2                   1057
 #define IDC_LIST_BOX_NGNO               1058
+#define IDC_LISTBOX_SENSOR              1058
 #define IDC_STC_PICINFO                 1059
 #define IDC_PIC_CTRL                    1060
 #define ID_BTN_BEGIN_CHECK              1061
@@ -109,6 +123,8 @@
 #define IDC_STC_ASD_NO                  1086
 #define IDC_STC_THREAD                  1087
 #define IDC_STC_EVT_CLASS               1088
+#define IDC_TREE1                       1089
+#define IDC_PRJ_TREE_MAPLIST            1089
 #define ID_32771                        32771
 #define ID_MENU_SRVCONF                 32772
 #define ID_32773                        32773
@@ -130,9 +146,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        316
+#define _APS_NEXT_RESOURCE_VALUE        319
 #define _APS_NEXT_COMMAND_VALUE         32787
-#define _APS_NEXT_CONTROL_VALUE         1089
+#define _APS_NEXT_CONTROL_VALUE         1090
 #define _APS_NEXT_SYMED_VALUE           310
 #endif
 #endif
