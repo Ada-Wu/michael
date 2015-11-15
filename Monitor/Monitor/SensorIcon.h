@@ -12,8 +12,9 @@
 
 class CSensorIcon : public CObject
 {
-	DECLARE_SERIAL(CSensorIcon)
 public:
+	DECLARE_SERIAL(CSensorIcon)
+
 	CSensorIcon();
 	virtual ~CSensorIcon();
 	//´®ÐÐ»¯
