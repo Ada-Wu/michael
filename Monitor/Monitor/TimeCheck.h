@@ -1,5 +1,4 @@
 #pragma once
-#include "afxcmn.h"
 
 
 // CTimeCheck ¶Ô»°¿ò
@@ -21,6 +20,4 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	virtual BOOL OnInitDialog();
-	void InitTimeCheckLst();
-	CListCtrl m_timeCheckLst;
 };

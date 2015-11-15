@@ -1,5 +1,4 @@
 #pragma once
-#include "afxcmn.h"
 
 
 // CGWConf 对话框
@@ -17,9 +16,6 @@ public:
 
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
-	void InitGwLst();
+
 	DECLARE_MESSAGE_MAP()
-public:
-	CListCtrl m_gwLst;
-	virtual BOOL OnInitDialog();
 };

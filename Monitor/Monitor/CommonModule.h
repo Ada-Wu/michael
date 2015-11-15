@@ -20,10 +20,4 @@ void DisplayCurMap(HWND wnd, CDC* pCDC, CString curPicPath, CRect& mapRect);
 
 //清空CObject队列
 void ClearList(CObArray& list);
-
-//读配置文件
-CString ReadConfigFile();
-
-//写配置文件
-CString WriteConfigFile();
 #endif
