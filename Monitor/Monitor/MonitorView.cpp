@@ -101,7 +101,7 @@ void CMonitorView::OnInitialUpdate()
 
 	//获取文档指针
 	CMainFrame* pFrame = (CMainFrame*)AfxGetMainWnd();
-	CMonitorDoc *pDoc = (CMonitorDoc*)pFrame->GetActiveDocument();
+	pDoc = (CMonitorDoc*)pFrame->GetActiveDocument();
 	ASSERT_VALID(pDoc);
 
 	//获取图片控件的矩形区域
@@ -270,12 +270,10 @@ void CMonitorView::OnNMClickMapTreeList(NMHDR *pNMHDR, LRESULT *pResult)
 					picName = picFileFind.GetFileName();//获取文件名称
 					int pos = picName.Find(_T("."));//打到“.”的位置
 					CString fileExtension = picName.Right(picName.GetLength() - pos - 1);//获取文件扩展名
-					char *pa = (char*)((LPCTSTR)fileExtension);
-					//if (strcmp(pa, "bmp") == 0 || strcmp(pa, "JPG") == 0 || strcmp(pa, "jpg") == 0 || strcmp(pa, "JPEG") == 0 || strcmp(pa, "jpeg") == 0)//如果文件扩展名为“bmp”或“JPG”或“jpg”
 					if (fileExtension == "bmp" || fileExtension == "jpg" || fileExtension == "JPEG" || fileExtension == "jpeg")
 						m_curMapPath = picPath;//保存图片路径
 
-					if (strcmp(pa, "prj") == 0)//如果有文件的扩展名为“prj”
+					if (fileExtension == "prj")//如果有文件的扩展名为“prj”
 					{
 						m_curPrjPath = picPath;//保存配置文件路径
 						CFile file;
@@ -324,5 +322,10 @@ void CMonitorView::OnPaint()
 	// 不为绘图消息调用 CFormView::OnPaint()
 	CDC* pCDC = GetDC();
 	DisplayCurMap(this->m_hWnd, pCDC, m_curMapPath, m_mapRect);
+	CBitmap iconBmp;
+	iconBmp.LoadBitmap(IDB_GWBMP);
+	DisplayIcon(iconBmp, pCDC, pDoc->m_gwList);
+	iconBmp.LoadBitmap(IDB_SENSORBMP);
+	DisplayIcon(iconBmp, pCDC, pDoc->m_sensorList);
 	ReleaseDC(pCDC);
 }
