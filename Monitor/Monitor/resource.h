@@ -2,6 +2,7 @@
 // Microsoft Visual C++ 生成的包含文件。
 // 供 Monitor.rc 使用
 //
+#define IDOK2                           2
 #define ID_BTN_CANCEL_ALL               3
 #define ID_BTN_SELECT_ALL               4
 #define IDD_ABOUTBOX                    100

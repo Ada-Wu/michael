@@ -67,6 +67,8 @@ BOOL CPrjConf::OnInitDialog()
 	CMainFrame* pFrame = (CMainFrame*)AfxGetMainWnd();
 	pDoc = (CMonitorDoc*)pFrame->GetActiveDocument();
 	ASSERT_VALID(pDoc);
+	pDoc->m_gwList.RemoveAll();
+	pDoc->m_sensorList.RemoveAll();
 
 	m_cursor = AfxGetApp()->LoadStandardCursor(IDC_CROSS);//设置光标形状为十字形
 
