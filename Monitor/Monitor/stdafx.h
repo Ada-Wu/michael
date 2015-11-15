@@ -19,6 +19,13 @@
 #include <afxwin.h>         // MFC 核心组件和标准组件
 #include <afxext.h>         // MFC 扩展
 
+#include <comdef.h>//初始化一下com口
+#ifndef ULONG_PTR
+#define ULONG_PTR unsigned long*
+#include "GdiPlus.h"
+using namespace Gdiplus;
+#pragma comment(lib,"gdiplus.lib")
+#endif
 
 #include <afxdisp.h>        // MFC 自动化类
 
@@ -32,6 +39,7 @@
 #endif // _AFX_NO_AFXCMN_SUPPORT
 
 #include <afxcontrolbars.h>     // 功能区和控件条的 MFC 支持
+#include <afx.h>
 
 
 

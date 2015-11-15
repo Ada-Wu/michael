@@ -38,13 +38,12 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 	// TODO:  在此处通过修改
 	//  CREATESTRUCT cs 来修改窗口类或样式;
 	cs.x = 225;
-	cs.y = 20;//修改默认窗口的位置
-	//cs.style &= ~WS_THICKFRAME;   //don 't   let   user   resize
-	//cs.style = WS_OVERLAPPEDWINDOW;
+	cs.y = 10;//修改默认窗口的位置
+	////cs.style &= ~WS_THICKFRAME;   //don 't   let   user   resize
+	////cs.style = WS_OVERLAPPEDWINDOW;
 
-	cs.cx = 1015;//窗口宽度
-
-	cs.cy = 500;//窗口高度
+	cs.style &= ~FWS_ADDTOTITLE;
+	cs.lpszName = _T("监控端");
 	return TRUE;
 }
 

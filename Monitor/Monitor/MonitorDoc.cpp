@@ -48,13 +48,27 @@ BOOL CMonitorDoc::OnNewDocument()
 	return TRUE;
 }
 
-
+//清空CObarray中的元素
+void CMonitorDoc::ClearList(CObArray& list)
+{
+	int size;
+	size = list.GetSize();
+	for (int i = 0; i < size; i++)
+	{
+		delete list.GetAt(i);
+		//下面的写法是错误的  
+		//      list.RemoveAt(i);  
+	}
+	list.RemoveAll();
+}
 
 
 // CMonitorDoc 序列化
 
 void CMonitorDoc::Serialize(CArchive& ar)
 {
+	m_gwList.Serialize(ar);
+	m_sensorList.Serialize(ar);
 	if (ar.IsStoring())
 	{
 		// TODO:  在此添加存储代码
@@ -62,6 +76,8 @@ void CMonitorDoc::Serialize(CArchive& ar)
 	else
 	{
 		// TODO:  在此添加加载代码
+		//ClearList(m_gwSelectedList);
+		//ClearList(m_sensorSelectedList);
 	}
 }
 

@@ -42,19 +42,25 @@
     <ClInclude Include="SrvConf.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="GW.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="PrjConf.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="TimeCheck.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="SndCho.h">
+    <ClInclude Include="History.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="History.h">
+    <ClInclude Include="GWConf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundChg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonModule.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorIcon.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -77,19 +83,25 @@
     <ClCompile Include="SrvConf.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="GW.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="PrjConf.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TimeCheck.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="SndCho.cpp">
+    <ClCompile Include="History.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="History.cpp">
+    <ClCompile Include="GWConf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundChg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonModule.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorIcon.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -108,6 +120,15 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\Monitor.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sensor.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\GW.bmp">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

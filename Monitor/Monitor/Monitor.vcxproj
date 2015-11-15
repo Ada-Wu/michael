@@ -99,7 +99,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GW.h" />
+    <ClInclude Include="CommonModule.h" />
+    <ClInclude Include="GWConf.h" />
     <ClInclude Include="History.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Monitor.h" />
@@ -107,21 +108,24 @@
     <ClInclude Include="MonitorView.h" />
     <ClInclude Include="PrjConf.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="SndCho.h" />
+    <ClInclude Include="SensorIcon.h" />
+    <ClInclude Include="SoundChg.h" />
     <ClInclude Include="SrvConf.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TimeCheck.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GW.cpp" />
+    <ClCompile Include="CommonModule.cpp" />
+    <ClCompile Include="GWConf.cpp" />
     <ClCompile Include="History.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Monitor.cpp" />
     <ClCompile Include="MonitorDoc.cpp" />
     <ClCompile Include="MonitorView.cpp" />
     <ClCompile Include="PrjConf.cpp" />
-    <ClCompile Include="SndCho.cpp" />
+    <ClCompile Include="SensorIcon.cpp" />
+    <ClCompile Include="SoundChg.cpp" />
     <ClCompile Include="SrvConf.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -136,8 +140,11 @@
     <None Include="res\Monitor.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\GW.bmp" />
     <Image Include="res\Monitor.ico" />
     <Image Include="res\MonitorDoc.ico" />
+    <Image Include="res\sensor.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
