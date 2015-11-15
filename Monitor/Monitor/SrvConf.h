@@ -1,4 +1,5 @@
 #pragma once
+#include "afxcmn.h"
 
 
 // CSrvConf ¶Ô»°¿ò
@@ -20,4 +21,6 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	virtual BOOL OnInitDialog();
+	void InitSrvLst();
+	CListCtrl m_srvLst;
 };
